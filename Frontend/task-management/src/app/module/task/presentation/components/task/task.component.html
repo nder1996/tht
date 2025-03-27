@@ -1,0 +1,166 @@
+<p-toast />
+<p-confirmDialog />
+<div class="container-fluid py-4">
+
+    <!-- Header Actions -->
+    <div class="row">
+        <div class="col-12 text-center" style="margin: 1rem;">
+            <p-button label="AGREGAR TAREA" icon="pi pi-file-plus" [outlined]="true" severity="success"
+                class="w-100 w-md-auto shadow-sm" (click)="showTask=true">
+            </p-button>
+        </div>
+    </div>
+
+    <!-- Table Container -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <p-table [value]="listTask" styleClass="custom-table" [paginator]="true" [rows]="5"
+                    [rowsPerPageOptions]="[5, 10, 20]" [scrollable]="true" scrollHeight="calc(100vh - 300px)"
+                    [resizableColumns]="true" responsiveLayout="stack" [breakpoint]="'960px'" class="task-table"
+                    [globalFilterFields]="['id', 'title', 'description', 'dueDate','status','state']">
+
+                    <ng-template pTemplate="header">
+                        <tr>
+                            <th class="text-nowrap border-bottom">
+                                N° TAREA
+                                <p-columnFilter type="text" field="id" display="menu"
+                                    placeholder="Filtrar Por N° Tareas"></p-columnFilter>
+                            </th>
+                            <th class="text-nowrap border-bottom">
+                                TITULO
+                                <p-columnFilter type="text" field="title" display="menu"></p-columnFilter>
+                            </th>
+                            <th class="border-bottom">
+                                DESCRIPCION
+                                <p-columnFilter type="text" field="description" display="menu"></p-columnFilter>
+                            </th>
+                            <th class="text-nowrap border-bottom">
+                                VENCIMIENTO
+                                <p-columnFilter type="text" field="dueDate" display="menu"></p-columnFilter>
+                            </th>
+                            <th class="border-bottom">
+                                ESTADO
+                                <p-columnFilter type="text" field="status" display="menu"></p-columnFilter>
+                            </th>
+                            <th class="text-nowrap border-bottom">
+                                ACCIONES
+                            </th>
+                        </tr>
+                    </ng-template>
+
+                    <ng-template pTemplate="body" let-task>
+                        <tr class="border-bottom">
+                            <td>
+                                {{ task.id }}
+                            </td>
+                            <td>
+                                {{ task.title }}
+                            </td>
+                            <td>
+                                {{ task.description }}
+                            </td>
+                            <td>
+                                {{task.dueDate | date:'dd/MM/yyyy'}}
+                            </td>
+                            <td>
+                                <p-tag [value]="task.status" [severity]="getStatusSeverity(task.status)"></p-tag>
+                            </td>
+                            <td>
+                                <div class="d-flex gap-2 flex-wrap justify-content-center align-content-center">
+                                    <p-button icon="pi pi-pen-to-square" [outlined]="true" severity="warning"
+                                        class="mb-2 mb-md-0 action-button" (click)="cargarModalEditar(task)" >
+                                    </p-button>
+                                    <p-button icon="pi pi-trash" severity="danger" [outlined]="true" (click)="eliminarTarea($event, task)" />
+                                </div>
+                            </td>
+                        </tr>
+                    </ng-template>
+
+                    <ng-template pTemplate="summary">
+                        <div class="text-center text-md-start p-3 border-top">
+                            Un total de {{listTask ? listTask.length : 0 }} Tareas
+                        </div>
+                    </ng-template>
+                </p-table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- MODAL DE AGREGAR Y EDITAR TAREA --->
+
+<p-dialog [contentStyle]="{'overflow': 'auto', 'padding': '0'}" styleClass="element-form custom-dialog" *ngIf="showTask"
+    [header]="actionEditarCrud ? 'EDITAR TAREA' : 'AGREGAR TAREA'" [modal]="true" [(visible)]="showTask"
+    [style]="{ width: '28rem' }" [draggable]="false" [resizable]="false" [position]="'top'">
+    <form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+        <div class="container-fluid w-full container-modal">
+            <div class="row">
+                <div class="col-12">
+                    <label htmlFor="title">Título</label>
+                    <input pInputText type="text" id="title" formControlName="title" class="p-inputtext-sm"
+                        placeholder="Título" [style]="{ width: '380px' }" />
+                    <small class="p-error" *ngIf="taskForm.get('title')?.invalid && taskForm.get('title')?.touched">
+                        El título es requerido
+                    </small>
+                </div>
+
+                <div class="col-12">
+                    <label htmlFor="description">Descripción</label>
+                    <textarea rows="5" cols="30" formControlName="description" pInputTextarea
+                        [style]="{ width: '380px' }"></textarea>
+                    <small class="p-error"
+                        *ngIf="taskForm.get('description')?.invalid && taskForm.get('description')?.touched">
+                        La descripción es requerida
+                    </small>
+                </div>
+
+                <div class="col-12">
+                    <label htmlFor="dueDate">Fecha de Vencimiento</label>
+                    <p-calendar formControlName="dueDate" styleClass="element-form" [style]="{ width: '380px' }"
+                        appendTo="body" placeholder="Seleccione una fecha" [minDate]="minDate"></p-calendar>
+                    <small class="p-error" *ngIf="taskForm.get('dueDate')?.invalid && taskForm.get('dueDate')?.touched">
+                        La fecha de vencimiento es requerida
+                    </small>
+                </div>
+
+                <div class="col-12">
+                    <label htmlFor="state">Estado</label>
+                    <p-dropdown formControlName="state" [options]="[
+                            { label: 'PENDIENTE', value: 'PENDIENTE', severity: 'danger' },
+                            { label: 'EN PROGRESO', value: 'EN_PROGRESO', severity: 'warning', disabled: !actionEditarCrud },
+                            { label: 'COMPLETADA', value: 'COMPLETADA', severity: 'success', disabled: !actionEditarCrud }
+                        ]" optionLabel="label" optionValue="value" [showClear]="true"
+                        placeholder="Seleccione el estado" appendTo="body" [style]="{ width: '380px' }">
+
+                        <ng-template pTemplate="selectedItem" let-state>
+                            <div class="flex align-items-center" *ngIf="state">
+                                <p-tag [severity]="state.severity" [value]="state.label"></p-tag>
+                            </div>
+                        </ng-template>
+
+                        <ng-template let-state pTemplate="item">
+                            <div class="flex align-items-center" [ngClass]="{'p-disabled': state.disabled}">
+                                <p-tag [severity]="state.severity" [value]="state.label"></p-tag>
+                            </div>
+                        </ng-template>
+                    </p-dropdown>
+
+                    <small class="p-error" *ngIf="taskForm.get('state')?.invalid && taskForm.get('state')?.touched">
+                        El estado es requerido
+                    </small>
+                </div>
+
+
+                <div class="col-12 d-flex flex-row" style="gap: 10px;">
+                    <p-button type="button" label="Cancelar" [outlined]="true" severity="secondary"
+                        (click)="showTask=false"></p-button>
+                    <p-button type="submit" [label]="actionEditarCrud ? 'Editar' : 'Guardar'" [raised]="true"
+                        [severity]="actionEditarCrud ? 'warning' : 'success'" [disabled]="!taskForm.valid">
+                    </p-button>
+                </div>
+            </div>
+        </div>
+    </form>
+</p-dialog>

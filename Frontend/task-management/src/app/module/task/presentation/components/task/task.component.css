@@ -1,0 +1,44 @@
+.container-modal{
+}
+
+
+.container-modal .col-12{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+}
+
+:host ::ng-deep .custom-table {
+    width: 100%;
+}
+
+:host ::ng-deep .custom-table table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+
+:host ::ng-deep .custom-table thead th {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+:host ::ng-deep .custom-table tbody td {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    text-align: center;
+}
+
+:host ::ng-deep .custom-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+:host ::ng-deep .custom-table tbody tr:hover {
+    background-color: #e9ecef;
+}

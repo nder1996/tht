@@ -1,0 +1,64 @@
+2025-03-26 16:55:14.474 -05:00 [INF] Now listening on: https://localhost:7180
+2025-03-26 16:55:14.499 -05:00 [INF] Now listening on: http://localhost:5234
+2025-03-26 16:55:14.560 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-26 16:55:14.562 -05:00 [INF] Hosting environment: Development
+2025-03-26 16:55:14.563 -05:00 [INF] Content root path: C:\Users\USUARIO\Documents\Github\tht\task management\task management
+2025-03-26 16:55:15.092 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/index.html - null null
+2025-03-26 16:55:15.249 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/index.html - 200 null text/html;charset=utf-8 165.6282ms
+2025-03-26 16:55:15.261 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-26 16:55:15.269 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 8.196ms
+2025-03-26 16:55:15.292 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_vs/browserLink - null null
+2025-03-26 16:55:15.322 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.607ms
+2025-03-26 16:55:15.404 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - null null
+2025-03-26 16:55:15.416 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.0967ms
+2025-03-26 16:55:17.817 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/api/Task/tasks - null null
+2025-03-26 16:55:17.830 -05:00 [INF] Executing endpoint 'task_management.WebApi.Controllers.TaskController.Task (task management)'
+2025-03-26 16:55:17.845 -05:00 [INF] Route matched with {action = "Task", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Task() on controller task_management.WebApi.Controllers.TaskController (task management).
+2025-03-26 16:55:17.953 -05:00 [INF] 🚀 INICIANDO: Task.Task [] - 16:55:17
+2025-03-26 16:55:17.954 -05:00 [INF] ⚙️ EN PROCESO: Task.Task [] con parámetros: 
+2025-03-26 16:55:17.957 -05:00 [INF] Iniciando aplicación
+2025-03-26 16:55:18.181 -05:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-03-26 16:55:19.925 -05:00 [INF] Executed DbCommand (179ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.create_at, t.description, t.due_date, t.state, t.status, t.title, t.update_at
+FROM public.tasks AS t
+WHERE t.state = 'A'
+2025-03-26 16:55:20.005 -05:00 [INF] ✅ COMPLETADO: Task.Task [] en 2052ms
+2025-03-26 16:55:20.006 -05:00 [INF] 🛑 TERMINADO: Task.Task [] - 16:55:20
+2025-03-26 16:55:20.012 -05:00 [INF] Executing ObjectResult, writing value of type 'task_management.Application.Dtos.Response.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[task_management.Application.Dtos.Response.TaskResponse, task management, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-26 16:55:20.034 -05:00 [INF] Executed action task_management.WebApi.Controllers.TaskController.Task (task management) in 2184.5171ms
+2025-03-26 16:55:20.037 -05:00 [INF] Executed endpoint 'task_management.WebApi.Controllers.TaskController.Task (task management)'
+2025-03-26 16:55:20.043 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/api/Task/tasks - 200 null application/json; charset=utf-8 2225.6254ms
+2025-03-26 16:56:03.120 -05:00 [INF] Now listening on: https://localhost:7180
+2025-03-26 16:56:03.147 -05:00 [INF] Now listening on: http://localhost:5234
+2025-03-26 16:56:03.214 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-26 16:56:03.216 -05:00 [INF] Hosting environment: Development
+2025-03-26 16:56:03.217 -05:00 [INF] Content root path: C:\Users\USUARIO\Documents\Github\tht\task management\task management
+2025-03-26 16:56:03.719 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/index.html - null null
+2025-03-26 16:56:03.867 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/index.html - 200 null text/html;charset=utf-8 154.5288ms
+2025-03-26 16:56:03.880 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-26 16:56:03.889 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 8.5582ms
+2025-03-26 16:56:03.912 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_vs/browserLink - null null
+2025-03-26 16:56:03.945 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.3597ms
+2025-03-26 16:56:04.017 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - null null
+2025-03-26 16:56:04.031 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.5865ms
+2025-03-26 16:56:07.564 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/api/Task/tasks - null null
+2025-03-26 16:56:07.577 -05:00 [INF] Executing endpoint 'task_management.WebApi.Controllers.TaskController.Task (task management)'
+2025-03-26 16:56:07.594 -05:00 [INF] Route matched with {action = "Task", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Task() on controller task_management.WebApi.Controllers.TaskController (task management).
+2025-03-26 16:56:07.703 -05:00 [INF] Iniciando aplicación
+2025-03-26 16:56:07.931 -05:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-03-26 16:56:09.522 -05:00 [INF] Executed DbCommand (208ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.create_at, t.description, t.due_date, t.state, t.status, t.title, t.update_at
+FROM public.tasks AS t
+WHERE t.state = 'A'
+2025-03-26 16:56:09.615 -05:00 [INF] Executing ObjectResult, writing value of type 'task_management.Application.Dtos.Response.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[task_management.Application.Dtos.Response.TaskResponse, task management, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-26 16:56:09.649 -05:00 [INF] Executed action task_management.WebApi.Controllers.TaskController.Task (task management) in 2049.8538ms
+2025-03-26 16:56:09.651 -05:00 [INF] Executed endpoint 'task_management.WebApi.Controllers.TaskController.Task (task management)'
+2025-03-26 16:56:09.657 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/api/Task/tasks - 200 null application/json; charset=utf-8 2092.8127ms
+2025-03-26 16:59:31 [INF] Iniciando aplicación
+2025-03-26 16:59:40 [INF] Iniciando aplicación
+2025-03-26 17:01:31 [INF] {#if Level='Error'}❌{#elseif Level='Warning'}⚠️{#elseif Level='Information'}ℹ️{#elseif Level='Debug'}🔍{#else}💡{#end} Iniciando aplicación
+[17:04:17 INF] HTTP GET /swagger/index.html responded 200 in 57.4722ms
+[17:04:17 INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.6706ms
+[17:04:19 INF] Iniciando aplicación
+[17:04:19 WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[17:04:21 INF] HTTP GET /api/Task/tasks responded 200 in 2062.1751ms

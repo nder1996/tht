@@ -1,0 +1,5 @@
+[2025-03-26 17:09:10] [INF] #{if Level='Fatal'}🔥{else if Level='Error'}❌{else if Level='Warning'}⚠️{else if Level='Information'}ℹ️✅# HTTP GET /swagger/index.html responded 200 in 45.7499ms
+[2025-03-26 17:09:10] [INF] #{if Level='Fatal'}🔥{else if Level='Error'}❌{else if Level='Warning'}⚠️{else if Level='Information'}ℹ️✅# HTTP GET /swagger/v1/swagger.json responded 200 in 8.8360ms
+[2025-03-26 17:09:13] [INF] #{if Level='Fatal'}🔥{else if Level='Error'}❌{else if Level='Warning'}⚠️{else if Level='Information'}ℹ️✅# Iniciando aplicación
+[2025-03-26 17:09:13] [WRN] #{if Level='Fatal'}🔥{else if Level='Error'}❌{else if Level='Warning'}⚠️{else if Level='Information'}ℹ️✅# Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[2025-03-26 17:09:15] [INF] #{if Level='Fatal'}🔥{else if Level='Error'}❌{else if Level='Warning'}⚠️{else if Level='Information'}ℹ️✅# HTTP GET /api/Task/tasks responded 200 in 2485.6305ms

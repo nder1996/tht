@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USUARIO\\Documents\\Github\\tht\\task management\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{74A5DE2C-392C-45B9-B275-DB0DC40C5C4A}|task management\\task management.csproj|c:\\users\\usuario\\documents\\github\\tht\\task management\\task management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74A5DE2C-392C-45B9-B275-DB0DC40C5C4A}|task management\\task management.csproj|solutionrelative:task management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74A5DE2C-392C-45B9-B275-DB0DC40C5C4A}|task management\\task management.csproj|c:\\users\\usuario\\documents\\github\\tht\\task management\\task management\\application\\service\\responseapibuilderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74A5DE2C-392C-45B9-B275-DB0DC40C5C4A}|task management\\task management.csproj|solutionrelative:task management\\application\\service\\responseapibuilderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74A5DE2C-392C-45B9-B275-DB0DC40C5C4A}|task management\\task management.csproj|c:\\users\\usuario\\documents\\github\\tht\\task management\\task management\\webapi\\filters\\logoperationattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74A5DE2C-392C-45B9-B275-DB0DC40C5C4A}|task management\\task management.csproj|solutionrelative:task management\\webapi\\filters\\logoperationattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74A5DE2C-392C-45B9-B275-DB0DC40C5C4A}|task management\\task management.csproj|c:\\users\\usuario\\documents\\github\\tht\\task management\\task management\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{74A5DE2C-392C-45B9-B275-DB0DC40C5C4A}|task management\\task management.csproj|solutionrelative:task management\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74A5DE2C-392C-45B9-B275-DB0DC40C5C4A}|task management\\task management.csproj|c:\\users\\usuario\\documents\\github\\tht\\task management\\task management\\application\\service\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74A5DE2C-392C-45B9-B275-DB0DC40C5C4A}|task management\\task management.csproj|solutionrelative:task management\\application\\service\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74A5DE2C-392C-45B9-B275-DB0DC40C5C4A}|task management\\task management.csproj|c:\\users\\usuario\\documents\\github\\tht\\task management\\task management\\webapi\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74A5DE2C-392C-45B9-B275-DB0DC40C5C4A}|task management\\task management.csproj|solutionrelative:task management\\webapi\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74A5DE2C-392C-45B9-B275-DB0DC40C5C4A}|task management\\task management.csproj|c:\\users\\usuario\\documents\\github\\tht\\task management\\task management\\task management.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{74A5DE2C-392C-45B9-B275-DB0DC40C5C4A}|task management\\task management.csproj|solutionrelative:task management\\task management.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74A5DE2C-392C-45B9-B275-DB0DC40C5C4A}|task management\\task management.csproj|c:\\users\\usuario\\documents\\github\\tht\\task management\\task management\\infrastructure\\persistence\\repository\\taskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74A5DE2C-392C-45B9-B275-DB0DC40C5C4A}|task management\\task management.csproj|solutionrelative:task management\\infrastructure\\persistence\\repository\\taskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74A5DE2C-392C-45B9-B275-DB0DC40C5C4A}|task management\\task management.csproj|c:\\users\\usuario\\documents\\github\\tht\\task management\\task management\\domain\\interfaces\\itaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74A5DE2C-392C-45B9-B275-DB0DC40C5C4A}|task management\\task management.csproj|solutionrelative:task management\\domain\\interfaces\\itaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "task management.http",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\Github\\tht\\task management\\task management\\task management.http",
+              "RelativeDocumentMoniker": "task management\\task management.http",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\Github\\tht\\task management\\task management\\task management.http",
+              "RelativeToolTip": "task management\\task management.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-03-26T21:47:33.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\Github\\tht\\task management\\task management\\appsettings.json",
+              "RelativeDocumentMoniker": "task management\\appsettings.json",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\Github\\tht\\task management\\task management\\appsettings.json",
+              "RelativeToolTip": "task management\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-26T21:00:56.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LogOperationAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\Github\\tht\\task management\\task management\\WebApi\\Filters\\LogOperationAttribute.cs",
+              "RelativeDocumentMoniker": "task management\\WebApi\\Filters\\LogOperationAttribute.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\Github\\tht\\task management\\task management\\WebApi\\Filters\\LogOperationAttribute.cs",
+              "RelativeToolTip": "task management\\WebApi\\Filters\\LogOperationAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T21:00:06.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResponseApiBuilderService.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\Github\\tht\\task management\\task management\\Application\\Service\\ResponseApiBuilderService.cs",
+              "RelativeDocumentMoniker": "task management\\Application\\Service\\ResponseApiBuilderService.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\Github\\tht\\task management\\task management\\Application\\Service\\ResponseApiBuilderService.cs",
+              "RelativeToolTip": "task management\\Application\\Service\\ResponseApiBuilderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T20:35:58.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\Github\\tht\\task management\\task management\\Program.cs",
+              "RelativeDocumentMoniker": "task management\\Program.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\Github\\tht\\task management\\task management\\Program.cs",
+              "RelativeToolTip": "task management\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T14:36:35.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TaskController.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\Github\\tht\\task management\\task management\\WebApi\\Controllers\\TaskController.cs",
+              "RelativeDocumentMoniker": "task management\\WebApi\\Controllers\\TaskController.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\Github\\tht\\task management\\task management\\WebApi\\Controllers\\TaskController.cs",
+              "RelativeToolTip": "task management\\WebApi\\Controllers\\TaskController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAiwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T16:54:08.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TaskService.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\Github\\tht\\task management\\task management\\Application\\Service\\TaskService.cs",
+              "RelativeDocumentMoniker": "task management\\Application\\Service\\TaskService.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\Github\\tht\\task management\\task management\\Application\\Service\\TaskService.cs",
+              "RelativeToolTip": "task management\\Application\\Service\\TaskService.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAIMAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T13:47:26.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ITaskService.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\Github\\tht\\task management\\task management\\Domain\\Interfaces\\ITaskService.cs",
+              "RelativeDocumentMoniker": "task management\\Domain\\Interfaces\\ITaskService.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\Github\\tht\\task management\\task management\\Domain\\Interfaces\\ITaskService.cs",
+              "RelativeToolTip": "task management\\Domain\\Interfaces\\ITaskService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T19:11:33.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TaskRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\Github\\tht\\task management\\task management\\Infrastructure\\Persistence\\Repository\\TaskRepository.cs",
+              "RelativeDocumentMoniker": "task management\\Infrastructure\\Persistence\\Repository\\TaskRepository.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\Github\\tht\\task management\\task management\\Infrastructure\\Persistence\\Repository\\TaskRepository.cs",
+              "RelativeToolTip": "task management\\Infrastructure\\Persistence\\Repository\\TaskRepository.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwDwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T05:16:03.483Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

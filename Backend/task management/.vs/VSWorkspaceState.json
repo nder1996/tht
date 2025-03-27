@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\task management",
+    "\\task management\\Application",
+    "\\task management\\Application\\Service",
+    "\\task management\\Domain",
+    "\\task management\\Domain\\Entities",
+    "\\task management\\Infrastructure",
+    "\\task management\\Infrastructure\\Persistence",
+    "\\task management\\Infrastructure\\Persistence\\DBContext"
+  ],
+  "SelectedNode": "\\task management.sln",
+  "PreviewInSolutionExplorer": false
+}
